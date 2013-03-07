@@ -1,0 +1,12 @@
+Build.PL
+lib/Catmandu/MediaMosa.pm
+lib/Catmandu/MediaMosa/Response.pm
+MANIFEST			This list of files
+t/00_load.t
+t/01_mediamosa.t
+t/02_importer.t
+README
+Makefile.PL
+LICENSE
+META.yml
+META.json

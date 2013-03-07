@@ -4,7 +4,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile
 (
   'NAME' => 'Catmandu::MediaMosa',
-  'VERSION_FROM' => 'lib/Catmandu/MediaMosa.pm',
+  'VERSION_FROM' => 'lib/Catmandu/Importer/MediaMosa.pm',
   'PREREQ_PM' => {
                    'Catmandu' => '0.06',
                    'Data::UUID' => 0,

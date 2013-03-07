@@ -26,6 +26,11 @@ SKIP: {
 
     my $count = $mm->take(20)->count();
     ok($count > 0);
+    
+    my $first = $mm->first;
+   
+    print Dumper($first);
+    
 }
 
 done_testing 4;

@@ -1,5 +1,5 @@
 {
-   "abstract" : "Low level Perl conncector for the MediaMosa REST API",
+   "abstract" : "Package that imports MediaMosa asset information into your application",
    "author" : [
       "Nicolas Franck <nicolas.franck@ugent.be>",
       "Patrick Hochstenbach <patrick.hochstenbach@ugent.be>"
@@ -43,7 +43,7 @@
    "provides" : {
       "Catmandu::MediaMosa" : {
          "file" : "lib/Catmandu/MediaMosa.pm",
-         "version" : "0.271"
+         "version" : 0
       },
       "Catmandu::MediaMosa::Response" : {
          "file" : "lib/Catmandu/MediaMosa/Response.pm",
@@ -64,5 +64,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.271"
+   "version" : "0.272"
 }

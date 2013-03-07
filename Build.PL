@@ -9,7 +9,7 @@ my $builder = Module::Build->new(
         'Nicolas Franck <nicolas.franck@ugent.be>',
         'Patrick Hochstenbach <patrick.hochstenbach@ugent.be>'
     ],
-    dist_version_from => 'lib/Catmandu/MediaMosa.pm',
+    dist_version_from => 'lib/Catmandu/Importer/MediaMosa.pm',
     build_requires => {
         'Software::License' => 0,
         'Test::Exception' => 0,

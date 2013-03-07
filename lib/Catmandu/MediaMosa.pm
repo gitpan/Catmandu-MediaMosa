@@ -8,8 +8,6 @@ use Digest::SHA1 qw(sha1_hex);
 use Catmandu::MediaMosa::Response;
 use URI::Escape;
 
-our $VERSION = '0.271';
-
 #zie http://www.mediamosa.org/sites/default/files/Webservices-MediaMosa-1.5.3.pdf
 
 has base_url => (

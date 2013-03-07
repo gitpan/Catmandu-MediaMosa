@@ -43,7 +43,7 @@
    "provides" : {
       "Catmandu::MediaMosa" : {
          "file" : "lib/Catmandu/MediaMosa.pm",
-         "version" : 0
+         "version" : "0.271"
       },
       "Catmandu::MediaMosa::Response" : {
          "file" : "lib/Catmandu/MediaMosa/Response.pm",
@@ -64,5 +64,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.272"
+   "version" : "0.273"
 }

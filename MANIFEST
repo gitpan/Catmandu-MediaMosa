@@ -1,5 +1,6 @@
 Build.PL
 lib/Catmandu/MediaMosa.pm
+lib/Catmandu/Importer/MediaMosa.pm
 lib/Catmandu/MediaMosa/Response.pm
 MANIFEST			This list of files
 t/00_load.t

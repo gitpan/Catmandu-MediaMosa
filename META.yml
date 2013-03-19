@@ -17,6 +17,9 @@ meta-spec:
   version: 1.4
 name: Catmandu-MediaMosa
 provides:
+  Catmandu::Importer::MediaMosa:
+    file: lib/Catmandu/Importer/MediaMosa.pm
+    version: 0.274
   Catmandu::MediaMosa:
     file: lib/Catmandu/MediaMosa.pm
     version: 0.271
@@ -40,4 +43,4 @@ requires:
   perl: v5.10.0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.273
+version: 0.274

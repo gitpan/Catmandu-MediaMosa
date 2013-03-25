@@ -36,6 +36,7 @@
             "LWP::UserAgent" : "0",
             "Moo" : "0.009011",
             "URI::Escape" : "0",
+            "XML::Simple" : "0",
             "perl" : "v5.10.0"
          }
       }
@@ -43,7 +44,7 @@
    "provides" : {
       "Catmandu::Importer::MediaMosa" : {
          "file" : "lib/Catmandu/Importer/MediaMosa.pm",
-         "version" : "0.274"
+         "version" : "0.275"
       },
       "Catmandu::MediaMosa" : {
          "file" : "lib/Catmandu/MediaMosa.pm",
@@ -68,5 +69,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.274"
+   "version" : "0.275"
 }

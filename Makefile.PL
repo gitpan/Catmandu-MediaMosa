@@ -15,7 +15,8 @@ WriteMakefile
                    'Software::License' => 0,
                    'Test::Exception' => 0,
                    'Test::More' => 0,
-                   'URI::Escape' => 0
+                   'URI::Escape' => 0,
+                   'XML::Simple' => 0
                  },
   'INSTALLDIRS' => 'site',
   'EXE_FILES' => [],

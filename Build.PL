@@ -24,6 +24,7 @@ my $builder = Module::Build->new(
         'Data::Util' => 0,
         'Digest::SHA1' => 0,
         'URI::Escape' => 0,
+        'XML::Simple' => 0,
     },
     add_to_cleanup => [qw(
         Catmandu-MediaMosa-*

@@ -4,7 +4,7 @@ use Catmandu::Sane;
 use Catmandu::MediaMosa;
 use Moo;
 
-our $VERSION = '0.274';
+our $VERSION = '0.275';
 
 with 'Catmandu::Importer';
 
@@ -49,7 +49,7 @@ Catmandu::Importer::MediaMosa - Package that imports MediaMosa asset information
 
     use Catmandu::Importer::MediaMosa;
 
-    my $importer = Catmandu::Importer::MediaMosa->new(bsae_url => '...' , user => '...' , password => '...' );
+    my $importer = Catmandu::Importer::MediaMosa->new(base_url => '...' , user => '...' , password => '...' );
 
     my $n = $importer->each(sub {
         my $hashref = $_[0];

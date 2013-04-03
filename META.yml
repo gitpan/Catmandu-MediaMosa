@@ -8,9 +8,9 @@ build_requires:
   Test::Exception: 0
   Test::More: 0
 configure_requires:
-  Module::Build: 0.4
+  Module::Build: 0.40
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Module::Build version 0.4004, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -19,20 +19,18 @@ name: Catmandu-MediaMosa
 provides:
   Catmandu::Importer::MediaMosa:
     file: lib/Catmandu/Importer/MediaMosa.pm
-    version: 0.275
+    version: 0.276
   Catmandu::MediaMosa:
     file: lib/Catmandu/MediaMosa.pm
     version: 0.271
   Catmandu::MediaMosa::Response:
     file: lib/Catmandu/MediaMosa/Response.pm
-    version: 0
   Catmandu::MediaMosa::Response::Header:
     file: lib/Catmandu/MediaMosa/Response.pm
-    version: 0
   Catmandu::MediaMosa::Response::Items:
     file: lib/Catmandu/MediaMosa/Response.pm
-    version: 0
 requires:
+  Carp: 0
   Catmandu: 0.06
   Data::UUID: 0
   Data::Util: 0
@@ -44,4 +42,4 @@ requires:
   perl: v5.10.0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.275
+version: 0.276

@@ -17,6 +17,7 @@ my $builder = Module::Build->new(
     },
     requires => {
         'perl' => '5.10.0',
+        'Carp' => 0,
         'Catmandu' => '0.06',
         'Moo' => '0.009011',
         'LWP::UserAgent' => 0,

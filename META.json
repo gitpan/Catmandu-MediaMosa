@@ -45,7 +45,7 @@
    "provides" : {
       "Catmandu::Importer::MediaMosa" : {
          "file" : "lib/Catmandu/Importer/MediaMosa.pm",
-         "version" : "0.276"
+         "version" : "0.277"
       },
       "Catmandu::MediaMosa" : {
          "file" : "lib/Catmandu/MediaMosa.pm",
@@ -67,5 +67,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.276"
+   "version" : "0.277"
 }

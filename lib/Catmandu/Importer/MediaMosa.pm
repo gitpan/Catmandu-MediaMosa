@@ -4,7 +4,7 @@ use Catmandu::Sane;
 use Catmandu::MediaMosa;
 use Moo;
 
-our $VERSION = '0.276';
+our $VERSION = '0.277';
 
 with 'Catmandu::Importer';
 

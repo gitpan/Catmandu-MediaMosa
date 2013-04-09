@@ -15,7 +15,7 @@ use all qw(
   Catmandu::MediaMosa::Response::*
 );
 
-our $VERSION = "0.278";
+our $VERSION = "0.279";
 
 #zie http://www.mediamosa.org/sites/default/files/Webservices-MediaMosa-1.5.3.pdf
 

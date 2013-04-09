@@ -3,7 +3,7 @@ use Catmandu::Sane;
 use Catmandu::MediaMosa;
 use Moo;
 
-our $VERSION = '0.277';
+our $VERSION = '0.279';
 
 with 'Catmandu::Importer';
 

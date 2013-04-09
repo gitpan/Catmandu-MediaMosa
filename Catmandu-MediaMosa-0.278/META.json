@@ -4,8 +4,8 @@
       "Nicolas Franck <nicolas.franck@ugent.be>",
       "Patrick Hochstenbach <patrick.hochstenbach@ugent.be>"
    ],
-   "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4004, CPAN::Meta::Converter version 2.130880",
+   "dynamic_config" : 0,
+   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -22,11 +22,6 @@
             "Test::More" : "0"
          }
       },
-      "configure" : {
-         "requires" : {
-            "Module::Build" : "0.40"
-         }
-      },
       "runtime" : {
          "requires" : {
             "Carp" : "0",
@@ -37,7 +32,9 @@
             "LWP::UserAgent" : "0",
             "Moo" : "0.009011",
             "URI::Escape" : "0",
-            "XML::Simple" : "0",
+            "XML::LibXML" : "0",
+            "XML::LibXML::XPathContext" : "0",
+            "all" : "0",
             "perl" : "v5.10.0"
          }
       }
@@ -49,16 +46,11 @@
       },
       "Catmandu::MediaMosa" : {
          "file" : "lib/Catmandu/MediaMosa.pm",
-         "version" : "0.271"
+         "version" : "0.1"
       },
       "Catmandu::MediaMosa::Response" : {
-         "file" : "lib/Catmandu/MediaMosa/Response.pm"
-      },
-      "Catmandu::MediaMosa::Response::Header" : {
-         "file" : "lib/Catmandu/MediaMosa/Response.pm"
-      },
-      "Catmandu::MediaMosa::Response::Items" : {
-         "file" : "lib/Catmandu/MediaMosa/Response.pm"
+         "file" : "lib/Catmandu/MediaMosa/Response.pm",
+         "version" : 0
       }
    },
    "release_status" : "stable",

@@ -1,5 +1,4 @@
 package Catmandu::Importer::MediaMosa;
-
 use Catmandu::Sane;
 use Catmandu::MediaMosa;
 use Moo;
@@ -11,34 +10,33 @@ with 'Catmandu::Importer';
 has base_url  => (is => 'ro' , required => 1);
 has user      => (is => 'ro' , required => 1);
 has password  => (is => 'ro' , required => 1);
-
 has mm => (is => 'ro' , init_arg => undef , lazy => 1 , builder => '_build_mm');
 
 sub _build_mm {
-    my ($self) = @_;
-    Catmandu::MediaMosa->new(base_url => $self->base_url , user => $self->user , password => $self->password);
+  my ($self) = @_;
+  Catmandu::MediaMosa->new(base_url => $self->base_url , user => $self->user , password => $self->password);
 } 
 
 sub generator {
-    my ($self) = @_;
+  my ($self) = @_;
+  
+  sub {
+    state $offset = 0;
+    state $res    = [];
     
-    sub {
-        state $offset = 0;
-        state $res    = [];
-        
-        if (@{$res} == 0) {
-            my $vpcore = $self->mm->asset_list({ offset => $offset  , limit => 10 });
-            return undef unless defined $vpcore;
-            my $hits  = $vpcore->header->item_count_total;
-            my $count = $vpcore->header->item_count;
-            $res = $vpcore->items->to_array;
-            $offset += $count ;
-        }
-        
-        my $asset = shift @{$res};
-        return undef unless $asset; 
-        $self->mm->asset($asset)->items->first
+    if (@{$res} == 0) {
+      my $vpcore = $self->mm->asset_list({ offset => $offset  , limit => 10 });
+      return undef unless defined $vpcore;
+      my $hits  = $vpcore->header->item_count_total;
+      my $count = $vpcore->header->item_count;
+      $res = $vpcore->items->to_array;
+      $offset += $count;
     }
+    
+    my $asset = shift @{$res};
+    return undef unless $asset; 
+    $self->mm->asset($asset)->items->first
+  }
 }
 
 =head1 NAME
@@ -81,4 +79,4 @@ Patrick Hochstenbach C<< Patrick Hochstenbach at UGent be >>
 
 =cut
 
-__PACKAGE__;
+1;
